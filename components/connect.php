@@ -1,9 +1,15 @@
 <?php
 
-$db_name = 'mysql:host=192.168.211.131;dbname=shop_db';
-$user_name = 'root';
-$user_password = 'password';
+$servername = "192.168.211.131";
+$username = "root";
+$password = "password";
 
-$conn = new PDO($db_name, $user_name, $user_password);
+try {
+    $conn = new PDO("mysql:host=$servername", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
 
 ?>
