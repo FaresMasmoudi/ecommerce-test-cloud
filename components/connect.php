@@ -1,6 +1,6 @@
 <?php
 
-$servername = "192.168.211.131";
+$servername = "my-mysql-container4";
 $username = "root";
 $password = "password";
 $dbname = "shop_db"; // replace with your database name
