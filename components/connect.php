@@ -1,6 +1,6 @@
 <?php
 
-$servername = "my-mysql-container4";
+$servername = "192.168.211.131"; // replace with your MySQL VM's IP address
 $username = "root";
 $password = "password";
 $dbname = "shop_db"; // replace with your database name
