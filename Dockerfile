@@ -28,6 +28,9 @@ WORKDIR /var/www/html
 # Copy your application code to the Docker image (assuming your code is in the current directory)
 COPY . .
 
+# Modify the Apache configuration file to listen on all network interfaces
+RUN echo "Listen 0.0.0.0:80" > /etc/apache2/ports.conf
+
 # Expose port 80 for Apache
 EXPOSE 80
 
