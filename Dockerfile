@@ -17,7 +17,7 @@ RUN add-apt-repository ppa:ondrej/php
 RUN apt-get update -y
 
 # Install PHP 8.2.0 and some extensions
-RUN apt-get install -y php8.2 libapache2-mod-php8.2 php8.2-common php8.2-mysql php8.2-gd php8.2-imap php8.2-cli php8.2-phpdbg php8.2-mbstring php8.2-bcmath
+RUN apt-get install -y php8.2 libapache2-mod-php8.2 php8.2-common php8.2-mysql php8.2-gd php8.2-imap php8.2-cli php8.2-phpdbg php8.2-mbstring php8.2-bcmath php8.2-mysql
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
